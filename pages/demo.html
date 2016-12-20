@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>OpenTBS Demo</title>
+<script language="javascript">
+  // redirection if open without the menu at the TBS site
+  if ( (document.location.href.indexOf('www.tinybutstrong.com') > 0)
+        && (document.location.href.indexOf('forms.html') > 0)
+	  ) {
+  	document.location.href = "/opentbs.php?demo";
+  }
+</script>
+<script type="text/javascript">
+	function download_template() {
+		var file = document.forms['form1'].elements['tpl'].value;
+		var rep = document.forms['form1'].action;
+		var p = rep.lastIndexOf('/');
+		if (p>=0) {
+			file = rep.substr(0, p+1) + file
+		}
+		window.location.href = file;
+	}
+</script>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+}
+.title1 {
+	font-size: 16px;
+	font-weight: bold;
+}
+-->
+</style>
+<SCRIPT language="JavaScript">
+    //<!--hide
+    //var password;
+    //var pass1="cool";
+    //password=prompt('Please enter your password to view this page!',' ');
+    //if (password==pass1)
+        //alert('Password Correct! Click OK to enter!');
+    //else
+    //{
+        //window.location="http://www.pageresource.com/jscript/jpass.htm";
+    //}
+</SCRIPT>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href= "../vendor/bootstrap/css/datepicker.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script language="javascript">
+    // redirection if open without the menu at the TBS site
+    if ( (document.location.href.indexOf('www.tinybutstrong.com') > 0)
+            && (document.location.href.indexOf('demo.html') > 0)
+	   ) {
+  	 document.location.href = "/opentbs.php?demo";
+    }
+    </script>
+    <script type="text/javascript">
+	   function download_template() {
+		  var file = document.forms['form1'].elements['tpl'].value;
+		  var rep = document.forms['form1'].action;
+		  var p = rep.lastIndexOf('/');
+		  if (p>=0) {
+			file = rep.substr(0, p+1) + file
+		  }
+		  window.location.href = file;
+	       }
+    </script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+</script>
+    
+
+
+<style>
+.ui-datepicker-calendar {
+    display: none;
+    }
+</style>
+
+</head>
+
+<body>
+<!-- main-body is used for insertion in the TBS menu -->
+     <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">CNSS v1.0</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+    <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Planning des séances</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Formulaire en ligne
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+<form id="form1" method="post" action="./demo_merge.php">
+  <table border="0" cellspacing="4" cellpadding="0">
+<div class="form-group">
+    <label>Nom de l'établissement</label>
+    <input name="yourestab" class="form-control" placeholder="Etablissement">
+</div>
+<div class="form-group">
+    <label>Nom et Prénom du bénéficiaire</label>
+    <input name="yourname" class="form-control" placeholder="Nom - Prénom">
+</div>
+      <h1>Mois 1</h1>   
+
+<div class="form-group">
+    <center>
+<iframe id='cv_if1' src='http://cdn.instantcal.com/cvir.html?id=cv_nav1&theme=RE&ntype=cv_datepickerm&file=http%3A%2F%2Fwww.instantcal.com%2Ftest.ics&border_radius=5' allowTransparency='true' scrolling='no' frameborder=0 height=250 width=250></iframe>
+        </center>
+</div>
+
+<div class="form-group">
+    <label>Date</label>
+    <input name="dateM1" class="form-control" id="datepicker" />
+</div>
+     
+      
+<div class="form-group">
+    <label>Fixer les jours</label>
+    <div><input name="jourM11">&nbsp;&nbsp;&nbsp;<input name="M111" size=3>&nbsp;&nbsp;&nbsp;<input name="M112" size=3>&nbsp;&nbsp;&nbsp;<input name="M113" size=3>&nbsp;&nbsp;&nbsp;<input name="M114" size=3>&nbsp;&nbsp;&nbsp;<input name="jourM115" size=3></div>
+    <div><input name="jourM12">&nbsp;&nbsp;&nbsp;<input name="M121" size=3>&nbsp;&nbsp;&nbsp;<input name="M122" size=3>&nbsp;&nbsp;&nbsp;<input name="M123" size=3>&nbsp;&nbsp;&nbsp;<input name="M124" size=3>&nbsp;&nbsp;&nbsp;<input name="jourM125" size=3></div>
+    <div><input name="jourM13">&nbsp;&nbsp;&nbsp;<input name="M131" size=3>&nbsp;&nbsp;&nbsp;<input name="M132" size=3>&nbsp;&nbsp;&nbsp;<input name="M133" size=3>&nbsp;&nbsp;&nbsp;<input name="M134" size=3>&nbsp;&nbsp;&nbsp;<input name="jourM135" size=3></div>
+</div>
+        </table>
+        </div>
+        <!-- /.col-lg-6 (nested) -->
+        <div class="col-lg-6">
+            <h1>Mois 2</h1>
+<div class="form-group">
+    <label>Date</label>
+    <input name="dateM2" class="form-control" id="datepicker" />
+</div>
+<div class="form-group">
+    <label>Fixer les jours</label>
+    <div><input name="jourM21">&nbsp;&nbsp;&nbsp;<input name="M211" size=3>&nbsp;&nbsp;&nbsp;<input name="M212" size=3>&nbsp;&nbsp;&nbsp;<input name="M213" size=3>&nbsp;&nbsp;&nbsp;<input name="M214" size=3>&nbsp;&nbsp;&nbsp;<input name="jourM215" size=3></div>
+    <div><input name="jourM22">&nbsp;&nbsp;&nbsp;<input name="M221" size=3>&nbsp;&nbsp;&nbsp;<input name="M222" size=3>&nbsp;&nbsp;&nbsp;<input name="M223" size=3>&nbsp;&nbsp;&nbsp;<input name="M224" size=3>&nbsp;&nbsp;&nbsp;<input name="jourM225" size=3></div>
+    <div><input name="jourM23">&nbsp;&nbsp;&nbsp;<input name="M231" size=3>&nbsp;&nbsp;&nbsp;<input name="M232" size=3>&nbsp;&nbsp;&nbsp;<input name="M233" size=3>&nbsp;&nbsp;&nbsp;<input name="M234" size=3>&nbsp;&nbsp;&nbsp;<input name="jourM235" size=3></div>
+</div>
+        <h1>Mois 3</h1>
+            <div class="form-group">
+    <label>Date</label>
+    <input name="dateM3" class="form-control" id="datepicker" />
+</div>
+<div class="form-group">
+    <label>Fixer les jours</label>
+    <div><input name="jourM31">&nbsp;&nbsp;&nbsp;<input name="M311" size=3>&nbsp;&nbsp;&nbsp;<input name="M312" size=3>&nbsp;&nbsp;&nbsp;<input name="M313" size=3>&nbsp;&nbsp;&nbsp;<input name="M314" size=3>&nbsp;&nbsp;&nbsp;<input name="jourM315" size=3></div>
+    <div><input name="jourM32">&nbsp;&nbsp;&nbsp;<input name="M321" size=3>&nbsp;&nbsp;&nbsp;<input name="M322" size=3>&nbsp;&nbsp;&nbsp;<input name="M323" size=3>&nbsp;&nbsp;&nbsp;<input name="M324" size=3>&nbsp;&nbsp;&nbsp;<input name="jourM325" size=3></div>
+    <div><input name="jourM33">&nbsp;&nbsp;&nbsp;<input name="M331" size=3>&nbsp;&nbsp;&nbsp;<input name="M332" size=3>&nbsp;&nbsp;&nbsp;<input name="M333" size=3>&nbsp;&nbsp;&nbsp;<input name="M334" size=3>&nbsp;&nbsp;&nbsp;<input name="jourM335" size=3></div>
+</div>
+<h1>Paramètre</h1>
+<div class="form-group">
+    <label>Fait à :</label>
+    <input name="yourtown" class="form-control" placeholder="Ville">
+</div>
+
+<div class="form-group">
+    <label>Format</label>
+    <select name = "tpl" class="form-control">
+        <option value = "demo_ms_word.docx" >Ms Word Document (.docx)</option>
+    </select>
+</div>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+        <button type="submit" class="btn btn-primary active" name="btn_result" value="Merge">Submit</button>
+        <button type="reset" class="btn btn-default">Reset</button>
+	  </td>
+    </tr>
+                                </div>
+
+</form>
+                                    </div>
+                                <!-- /.col-lg-6 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap-datepicker.js"></script>
+    <script src="../vendor/bootstrap/js/moment.js"></script>
+    <script src="../vendor/bootstrap/js/collapse.js"></script>
+    <script src="../vendor/bootstrap/js/transition.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../vendor/bootstrap/js/jsSimpleDatePickr.js"></script>
+    <script src="../vendor/bootstrap/js/jsSimpleDatePickrInit.js"></script>
+
+
+
+
+
+
+
+
+</body>
+<script type="text/javascript">
+	// enable the option for savegin as a file, the PHP script will test if it is running on localhost anyway.
+	if (window.location.hostname=='localhost') document.getElementById('save_as_file').style.display='table-row';
+</script>
+</html>
